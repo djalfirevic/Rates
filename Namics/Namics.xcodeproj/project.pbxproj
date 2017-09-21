@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840291CA1F73DF1F00AF2798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840291C91F73DF1F00AF2798 /* AppDelegate.swift */; };
+		840291CC1F73DF1F00AF2798 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840291CB1F73DF1F00AF2798 /* HomeViewController.swift */; };
+		840291CF1F73DF1F00AF2798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840291CD1F73DF1F00AF2798 /* Main.storyboard */; };
+		840291D11F73DF1F00AF2798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840291D01F73DF1F00AF2798 /* Assets.xcassets */; };
+		840291D41F73DF1F00AF2798 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840291D21F73DF1F00AF2798 /* LaunchScreen.storyboard */; };
+		840291DF1F73DF1F00AF2798 /* NamicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840291DE1F73DF1F00AF2798 /* NamicsTests.swift */; };
+		840291F51F73E08D00AF2798 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840291F01F73E08D00AF2798 /* Constants.swift */; };
+		840291F61F73E08D00AF2798 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840291F11F73E08D00AF2798 /* Reachability.swift */; };
+		840291F81F73E08D00AF2798 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840291F31F73E08D00AF2798 /* DataManager.swift */; };
+		840291F91F73E08D00AF2798 /* RESTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840291F41F73E08D00AF2798 /* RESTManager.swift */; };
+		840291FC1F73E15E00AF2798 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840291FB1F73E15E00AF2798 /* SystemConfiguration.framework */; };
+		841222351F73E65800A4F785 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841222341F73E65800A4F785 /* Item.swift */; };
+		841222381F73E7D800A4F785 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841222371F73E7D800A4F785 /* ItemTableViewCell.swift */; };
+		8412223C1F73ECF800A4F785 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412223B1F73ECF800A4F785 /* CheckoutViewController.swift */; };
+		84DB4F011F73F34B00B5CACA /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB4F001F73F34B00B5CACA /* PickerTextField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		840291DB1F73DF1F00AF2798 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840291BE1F73DF1F00AF2798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840291C51F73DF1F00AF2798;
+			remoteInfo = Namics;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		840291C61F73DF1F00AF2798 /* Namics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Namics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		840291C91F73DF1F00AF2798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		840291CB1F73DF1F00AF2798 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		840291CE1F73DF1F00AF2798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		840291D01F73DF1F00AF2798 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		840291D31F73DF1F00AF2798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		840291DA1F73DF1F00AF2798 /* NamicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NamicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840291DE1F73DF1F00AF2798 /* NamicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamicsTests.swift; sourceTree = "<group>"; };
+		840291E01F73DF1F00AF2798 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840291F01F73E08D00AF2798 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		840291F11F73E08D00AF2798 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		840291F31F73E08D00AF2798 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		840291F41F73E08D00AF2798 /* RESTManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTManager.swift; sourceTree = "<group>"; };
+		840291FB1F73E15E00AF2798 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		840291FD1F73E47300AF2798 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841222341F73E65800A4F785 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		841222371F73E7D800A4F785 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		8412223B1F73ECF800A4F785 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		84DB4F001F73F34B00B5CACA /* PickerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		840291C31F73DF1F00AF2798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840291FC1F73E15E00AF2798 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840291D71F73DF1F00AF2798 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		840291BD1F73DF1F00AF2798 = {
+			isa = PBXGroup;
+			children = (
+				840291C81F73DF1F00AF2798 /* Namics */,
+				840291DD1F73DF1F00AF2798 /* NamicsTests */,
+				840291FA1F73E15E00AF2798 /* Frameworks */,
+				840291C71F73DF1F00AF2798 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		840291C71F73DF1F00AF2798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				840291C61F73DF1F00AF2798 /* Namics.app */,
+				840291DA1F73DF1F00AF2798 /* NamicsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		840291C81F73DF1F00AF2798 /* Namics */ = {
+			isa = PBXGroup;
+			children = (
+				841222361F73E7BF00A4F785 /* Cells */,
+				840291FF1F73E50100AF2798 /* Models */,
+				840291EF1F73E07000AF2798 /* Utilities */,
+				840291EC1F73DFFA00AF2798 /* Storyboards */,
+				840291EA1F73DFCD00AF2798 /* View Controllers */,
+				840291EB1F73DFD900AF2798 /* Supporting Files */,
+				840291FD1F73E47300AF2798 /* Info.plist */,
+			);
+			path = Namics;
+			sourceTree = "<group>";
+		};
+		840291DD1F73DF1F00AF2798 /* NamicsTests */ = {
+			isa = PBXGroup;
+			children = (
+				840291DE1F73DF1F00AF2798 /* NamicsTests.swift */,
+				840291E01F73DF1F00AF2798 /* Info.plist */,
+			);
+			path = NamicsTests;
+			sourceTree = "<group>";
+		};
+		840291E91F73DFBC00AF2798 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				840291C91F73DF1F00AF2798 /* AppDelegate.swift */,
+			);
+			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		840291EA1F73DFCD00AF2798 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				840291CB1F73DF1F00AF2798 /* HomeViewController.swift */,
+				8412223B1F73ECF800A4F785 /* CheckoutViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		840291EB1F73DFD900AF2798 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				840291E91F73DFBC00AF2798 /* Application Delegate */,
+				840291D01F73DF1F00AF2798 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		840291EC1F73DFFA00AF2798 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				840291CD1F73DF1F00AF2798 /* Main.storyboard */,
+				840291D21F73DF1F00AF2798 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		840291EF1F73E07000AF2798 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				840291F01F73E08D00AF2798 /* Constants.swift */,
+				840291F31F73E08D00AF2798 /* DataManager.swift */,
+				840291F11F73E08D00AF2798 /* Reachability.swift */,
+				840291F41F73E08D00AF2798 /* RESTManager.swift */,
+				84DB4F001F73F34B00B5CACA /* PickerTextField.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		840291FA1F73E15E00AF2798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				840291FB1F73E15E00AF2798 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		840291FF1F73E50100AF2798 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				841222341F73E65800A4F785 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		841222361F73E7BF00A4F785 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				841222371F73E7D800A4F785 /* ItemTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		840291C51F73DF1F00AF2798 /* Namics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840291E31F73DF1F00AF2798 /* Build configuration list for PBXNativeTarget "Namics" */;
+			buildPhases = (
+				840291C21F73DF1F00AF2798 /* Sources */,
+				840291C31F73DF1F00AF2798 /* Frameworks */,
+				840291C41F73DF1F00AF2798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Namics;
+			productName = Namics;
+			productReference = 840291C61F73DF1F00AF2798 /* Namics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		840291D91F73DF1F00AF2798 /* NamicsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840291E61F73DF1F00AF2798 /* Build configuration list for PBXNativeTarget "NamicsTests" */;
+			buildPhases = (
+				840291D61F73DF1F00AF2798 /* Sources */,
+				840291D71F73DF1F00AF2798 /* Frameworks */,
+				840291D81F73DF1F00AF2798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840291DC1F73DF1F00AF2798 /* PBXTargetDependency */,
+			);
+			name = NamicsTests;
+			productName = NamicsTests;
+			productReference = 840291DA1F73DF1F00AF2798 /* NamicsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		840291BE1F73DF1F00AF2798 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Namics;
+				TargetAttributes = {
+					840291C51F73DF1F00AF2798 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					840291D91F73DF1F00AF2798 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 840291C51F73DF1F00AF2798;
+					};
+				};
+			};
+			buildConfigurationList = 840291C11F73DF1F00AF2798 /* Build configuration list for PBXProject "Namics" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 840291BD1F73DF1F00AF2798;
+			productRefGroup = 840291C71F73DF1F00AF2798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				840291C51F73DF1F00AF2798 /* Namics */,
+				840291D91F73DF1F00AF2798 /* NamicsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		840291C41F73DF1F00AF2798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840291D41F73DF1F00AF2798 /* LaunchScreen.storyboard in Resources */,
+				840291D11F73DF1F00AF2798 /* Assets.xcassets in Resources */,
+				840291CF1F73DF1F00AF2798 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840291D81F73DF1F00AF2798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		840291C21F73DF1F00AF2798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840291F91F73E08D00AF2798 /* RESTManager.swift in Sources */,
+				84DB4F011F73F34B00B5CACA /* PickerTextField.swift in Sources */,
+				841222381F73E7D800A4F785 /* ItemTableViewCell.swift in Sources */,
+				840291CC1F73DF1F00AF2798 /* HomeViewController.swift in Sources */,
+				840291F81F73E08D00AF2798 /* DataManager.swift in Sources */,
+				8412223C1F73ECF800A4F785 /* CheckoutViewController.swift in Sources */,
+				840291CA1F73DF1F00AF2798 /* AppDelegate.swift in Sources */,
+				841222351F73E65800A4F785 /* Item.swift in Sources */,
+				840291F61F73E08D00AF2798 /* Reachability.swift in Sources */,
+				840291F51F73E08D00AF2798 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		840291D61F73DF1F00AF2798 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840291DF1F73DF1F00AF2798 /* NamicsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		840291DC1F73DF1F00AF2798 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840291C51F73DF1F00AF2798 /* Namics */;
+			targetProxy = 840291DB1F73DF1F00AF2798 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		840291CD1F73DF1F00AF2798 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840291CE1F73DF1F00AF2798 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		840291D21F73DF1F00AF2798 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				840291D31F73DF1F00AF2798 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		840291E11F73DF1F00AF2798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		840291E21F73DF1F00AF2798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		840291E41F73DF1F00AF2798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Namics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.namics.Namics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		840291E51F73DF1F00AF2798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Namics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.namics.Namics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		840291E71F73DF1F00AF2798 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NamicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.namics.NamicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Namics.app/Namics";
+			};
+			name = Debug;
+		};
+		840291E81F73DF1F00AF2798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NamicsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.namics.NamicsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Namics.app/Namics";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		840291C11F73DF1F00AF2798 /* Build configuration list for PBXProject "Namics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840291E11F73DF1F00AF2798 /* Debug */,
+				840291E21F73DF1F00AF2798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840291E31F73DF1F00AF2798 /* Build configuration list for PBXNativeTarget "Namics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840291E41F73DF1F00AF2798 /* Debug */,
+				840291E51F73DF1F00AF2798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		840291E61F73DF1F00AF2798 /* Build configuration list for PBXNativeTarget "NamicsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840291E71F73DF1F00AF2798 /* Debug */,
+				840291E81F73DF1F00AF2798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 840291BE1F73DF1F00AF2798 /* Project object */;
+}
