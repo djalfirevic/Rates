@@ -44,7 +44,8 @@ class PickerTextField: UITextField {
         }
     }
     weak var pickerDelegate: PickerTextFieldDelegate?
-
+    let screen = UIScreen.main
+    
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -86,26 +87,13 @@ class PickerTextField: UITextField {
     }
 
     // MARK: - Private API
-    fileprivate func setup() {
-        let screen = UIScreen.main
-
-        let pickerView = UIPickerView()
-        pickerView.frame = CGRect(x: 0, y: 0, width: screen.bounds.size.width, height: pickerView.frame.size.height)
-        pickerView.dataSource = self
-        pickerView.delegate = self
-        pickerView.backgroundColor = UIColor.white
-        pickerView.tintColor = UIColor.white
+    private func setup() {
+        let pickerView = createPicker()
         inputView = pickerView
-
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: screen.bounds.size.width, height: 44))
-        toolbar.isTranslucent = false
-        toolbar.tintColor = UIColor.darkGray
-        toolbar.barTintColor = UIColor.white
 
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(pickerDone))
-        toolbar.items = [flexibleSpace, doneButton]
-        inputAccessoryView = toolbar
+        inputAccessoryView = createToolbar(with: [flexibleSpace, doneButton])
 
         if let text = selectedOption {
             var index = Int(INT_MAX)
@@ -120,28 +108,46 @@ class PickerTextField: UITextField {
         }
     }
 
-    fileprivate func setupDatePicker() {
-        let screen = UIScreen.main
+    private func setupDatePicker() {
+        inputView  = createDatePicker()
 
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(pickerDone))
+        inputAccessoryView = createToolbar(with: [flexibleSpace, doneButton])
+    }
+    
+    private func createToolbar(with items: [UIBarButtonItem]) -> UIToolbar {
+        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: screen.bounds.size.width, height: 44))
+        toolbar.isTranslucent = false
+        toolbar.tintColor = UIColor.darkGray
+        toolbar.barTintColor = UIColor.white
+        toolbar.items = items
+        
+        return toolbar
+    }
+    
+    private func createPicker() -> UIPickerView {
+        let pickerView = UIPickerView()
+        pickerView.frame = CGRect(x: 0, y: 0, width: screen.bounds.size.width, height: pickerView.frame.size.height)
+        pickerView.dataSource = self
+        pickerView.delegate = self
+        pickerView.backgroundColor = UIColor.white
+        pickerView.tintColor = UIColor.white
+        
+        return pickerView
+    }
+
+    private func createDatePicker() -> UIDatePicker {
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.backgroundColor = UIColor.white
         datePicker.tintColor = UIColor.darkGray
         datePicker.date = date
         datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: .valueChanged)
-        inputView  = datePicker
-
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: screen.bounds.size.width, height: 44))
-        toolbar.isTranslucent = false
-        toolbar.tintColor = UIColor.darkGray
-        toolbar.barTintColor = UIColor.white
-
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(pickerDone))
-        toolbar.items = [flexibleSpace, doneButton]
-        inputAccessoryView = toolbar
+        
+        return datePicker
     }
-
+    
 }
 
 extension PickerTextField: UIPickerViewDataSource, UIPickerViewDelegate {
